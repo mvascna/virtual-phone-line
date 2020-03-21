@@ -23,6 +23,4 @@ done
 
 gomplate -f /tmp/config.php -o /var/www/html/config.php
 
-cat /var/www/html/config.php
-
 apache2-foreground
