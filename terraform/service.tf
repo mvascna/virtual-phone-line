@@ -98,11 +98,11 @@ resource aws_ecs_task_definition vphone {
       },
       {
         "name": "TITLE",
-        "value": "Welcome to the Narcotics Anonymous virtual meeting finder"
+        "value": "Welcome to the Virtual Meeting Finder, provided by the North Star Group of Narcotics Anonymous"
       },
       {
         "name": "BMLT_ROOT_SERVER",
-        "value": "https://bmlt.virtual-na.org/main_server/"
+        "value": "https://bmlt.virtual-na.org/main_server"
       },
       {
         "name": "GOOGLE_MAPS_API_KEY",
@@ -115,6 +115,14 @@ resource aws_ecs_task_definition vphone {
       {
         "name": "TWILIO_AUTH_TOKEN",
         "value": "${var.twilio_auth_token}"
+      },
+      {
+        "name": "CUSTOM_QUERY",
+        "value": "&weekdays={DAY}&formats=47&sort_keys=start_time"
+      },
+      {
+        "name": "DIGIT_MAP_SEARCH_TYPE",
+        "value": "['2' => SearchType::MEETINGS, '3' => SearchType::JFT]"
       }
     ],
     "links": [],
