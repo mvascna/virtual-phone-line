@@ -9,3 +9,7 @@ variable twilio_account_sid {
 variable twilio_auth_token {
   type = string
 }
+
+variable slack_webhook_url {
+  type = string
+}
