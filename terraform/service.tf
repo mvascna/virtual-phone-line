@@ -123,6 +123,10 @@ resource aws_ecs_task_definition vphone {
       {
         "name": "DIGIT_MAP_SEARCH_TYPE",
         "value": "['2' => SearchType::MEETINGS, '3' => SearchType::JFT]"
+      },
+      {
+        "name": "DEBUG",
+        "value": "true"
       }
     ],
     "links": [],
