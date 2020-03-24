@@ -18,6 +18,7 @@ static $sms_summary_page      = {{ getenv "SMS_SUMMARY_PAGE" "false" }};
 static $virtual               = {{ getenv "VIRTUAL" "true" }};
 static $grace_mintues         = {{ getenv "GRACE_MINUTES" "30" }};
 static $result_count_max      = {{ getenv "RESULT_COUNT_MAX" "10" }};
+static $sms_combine           = {{ getenv "SMS_COMBINE" "true" }};
 static $debug                 = {{ getenv "DEBUG" "false"}};
 {{ if getenv "DIGIT_MAP_SEARCH_TYPE" }}
 static $digit_map_search_type = {{ getenv "DIGIT_MAP_SEARCH_TYPE" }};
