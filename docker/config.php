@@ -19,11 +19,13 @@ static $virtual               = {{ getenv "VIRTUAL" "true" }};
 static $grace_minutes         = {{ getenv "GRACE_MINUTES" "30" }};
 static $result_count_max      = {{ getenv "RESULT_COUNT_MAX" "5" }};
 static $sms_combine           = {{ getenv "SMS_COMBINE" "true" }};
-static $debug                 = {{ getenv "DEBUG" "false" }};
-static $time_format           = {{ getenv "TIME_FORMAT" "g:i A T" }};
+static $debug                 = {{ getenv "DEBUG" "false"}};
 {{ if getenv "DIGIT_MAP_SEARCH_TYPE" }}
 static $digit_map_search_type = {{ getenv "DIGIT_MAP_SEARCH_TYPE" }};
 {{ end }}
 {{ if getenv "CUSTOM_QUERY" }}
 static $custom_query          = {{ getenv "CUSTOM_QUERY" | quote }};
+{{ end }}
+{{ if getenv "TIME_FORMAT" }}
+static $custom_query          = {{ getenv "TIME_FORMAT" | quote }};
 {{ end }}
