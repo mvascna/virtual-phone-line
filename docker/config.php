@@ -27,5 +27,5 @@ static $digit_map_search_type = {{ getenv "DIGIT_MAP_SEARCH_TYPE" }};
 static $custom_query          = {{ getenv "CUSTOM_QUERY" | quote }};
 {{ end }}
 {{ if getenv "TIME_FORMAT" }}
-static $custom_query          = {{ getenv "TIME_FORMAT" | quote }};
+static $time_format           = {{ getenv "TIME_FORMAT" | quote }};
 {{ end }}

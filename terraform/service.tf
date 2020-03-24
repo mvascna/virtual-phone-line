@@ -126,7 +126,7 @@ resource aws_ecs_task_definition vphone {
       },
       {
         "name": "TIME_FORMAT",
-        "value: "g:i A T"
+        "value": "g:i A T"
       },
       {
         "name": "DEBUG",
