@@ -16,8 +16,9 @@ static $bmlt_auth             = {{ getenv "BMLT_AUTH" "true" }};
 static $darkModeFeatureToggle = {{ getenv "DARK_MODE" "true" }};
 static $sms_summary_page      = {{ getenv "SMS_SUMMARY_PAGE" "false" }};
 static $virtual               = {{ getenv "VIRTUAL" "true" }};
-static $grace_time            = {{ getenv "GRACE_TIME" "30" }};
-static $result_count_max      = {{ getenv "RESULT_COUNT_MAX" "10" }};
+static $grace_minutes         = {{ getenv "GRACE_MINUTES" "30" }};
+static $result_count_max      = {{ getenv "RESULT_COUNT_MAX" "5" }};
+static $sms_combine           = {{ getenv "SMS_COMBINE" "true" }};
 static $debug                 = {{ getenv "DEBUG" "false"}};
 {{ if getenv "DIGIT_MAP_SEARCH_TYPE" }}
 static $digit_map_search_type = {{ getenv "DIGIT_MAP_SEARCH_TYPE" }};

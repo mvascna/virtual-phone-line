@@ -19,7 +19,7 @@ RUN curl -L https://github.com/hairyhenderson/gomplate/releases/download/v3.6.0/
     chmod +x gomplate && \
     mv gomplate /usr/local/bin/gomplate
 
-RUN curl -L https://github.com/bmlt-enabled/yap/releases/download/3.6.5-beta2/yap-3.6.5-beta2.zip -o yap.zip && \
+RUN curl -L https://github.com/bmlt-enabled/yap/releases/download/3.6.5-beta7/yap-3.6.5-beta7.zip -o yap.zip && \
     unzip yap.zip -d /var/www/html && \
     rm -f yap.zip
 
