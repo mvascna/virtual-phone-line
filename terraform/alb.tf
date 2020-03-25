@@ -32,7 +32,7 @@ resource aws_lb_target_group vphone {
   protocol = "HTTP"
   vpc_id   = module.vpc.vpc_id
 
-  deregistration_delay = 60
+  deregistration_delay = 0
 
   health_check {
     path    = "/upgrade-advisor.php"
