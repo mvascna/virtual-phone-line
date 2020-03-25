@@ -125,6 +125,10 @@ resource aws_ecs_task_definition vphone {
         "value": "['2' => SearchType::MEETINGS, '3' => SearchType::JFT]"
       },
       {
+        "name": "TIME_FORMAT",
+        "value": "g:i A T"
+      },
+      {
         "name": "DEBUG",
         "value": "true"
       }
