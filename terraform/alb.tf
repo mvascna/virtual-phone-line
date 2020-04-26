@@ -35,7 +35,7 @@ resource aws_lb_target_group vphone {
   deregistration_delay = 0
 
   health_check {
-    path     = "/upgrade-advisor.php"
+    path     = "/ping.php"
     matcher  = "200"
     interval = "60"
   }
