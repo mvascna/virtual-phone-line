@@ -2,3 +2,5 @@
 .terraform
 .idea
 variables.tfvars
+plan.plan
+
